@@ -1,0 +1,60 @@
+html {
+    background-color: lavender;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+    color: purple;
+}
+
+h2 {
+    color: purple;
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+
+table {
+    border: 2px solid black;
+    display: table;
+}
+
+th {
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+    font-size: 12px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 25em;
+}
+
+.tag {
+    background-color: cornsilk;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.element {
+    text-align: center;
+}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML/CSS Cheatsheet</title>
+        <link href="./resources/style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+                <h1>HTML/CSS Cheatsheet</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#elements">HTML: Elements and Structure</a></li>
+                <li><a href="#tables">HTML: Tables</a></li>
+                <li><a href="#forms">HTML: Forms</a></li>
+                <li><a href="#semantic">HTML: Semantic</a></li>
+                <li><a href="#selectors">CSS: Selectors and Visual Rules</a></li>
+                <li><a href="#box-model">CSS: The Box Model</a></li>
+                <li><a href="#display">CSS: Display and Positioning</a></li>
+                <li><a href="#colors">CSS: Colors</a></li>
+                <li><a href="#typography">CSS: Typography</a></li>
+                <li><a href="grid">CSS: Grid</a></li>
+            </ul>
+        </nav>
+
+        <section id="elements">
+        <h2>HTML: Elements and Structure</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag/Attribute</th>
+                        <th>Element</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;!DOCTYPE html&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Document Type Declaration</p>
+                        </td>
+                        <td>
+                            <p>Required as the first line in an HTML document. This is an instruction to the browser about what type of document to expect.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;html&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">HTML</p>
+                        </td>
+                        <td>
+                            <p>Root of an HTML document. Should be added after the declaration. Contains all content/structure for an HTML document.</p>
+                            <img src="resources/images/HTML.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;head&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Head</p>
+                        </td>
+                        <td>
+                            <p>Contains general information about an HTML page that isn't displayed on the page itself. This information is called metadata and includes things like the title of the HTML document and links to stylesheets.</p>
+                            <img src="resources/images/head.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;title&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Title</p>
+                        </td>
+                        <td>
+                            <p>Defines the title of an HTML document. Displayed in browser's tab. Can only be contained inside a document's < head > element.</p>
+                            <img src="resources/images/title.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;body&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Body</p>
+                        </td>
+                        <td>
+                            <p>Represents the content of an HTML document. Content inside these tags are rendered on web browsers.</p>
+                            <img src="resources/images/body.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;div&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Div</p>
+                        </td>
+                        <td>
+                            <p>Short for "division." Used as a container that divides an HTML document into sections. Can contain flow content such as headings, paragraphs, links, images, etc.</p>
+                            <img src="resources/images/div.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;p&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Paragraph</p>
+                        </td>
+                        <td>
+                            <p>Contains and displays a block of text.</p>
+                            <img src="resources/images/paragraph.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;span&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Span</p>
+                        </td>
+                        <td>
+                            <p>Inline container for text and can be used to group text for styling purposes.</p>
+                            <img src="resources/images/span.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;em&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Emphasis</p>
+                        </td>
+                        <td>
+                            <p>Emphasizes text by italicizing it.</p>
+                            <img src="resources/images/emphasis.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;strong&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Strong</p>
+                        </td>
+                        <td>
+                            <p>Highlights important, serious, or urgent text by making it bold.</p>
+                            <img src="resources/images/strong.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;br&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Line Break</p>
+                        </td>
+                        <td>
+                            <p>Creates a line break in text. *self-closing tag*</p>
+                            <img src="resources/images/break.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;ul&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Unordered List</p>
+                        </td>
+                        <td>
+                            <p>Creates a (bullet) list of items in no particular order.</p>
+                            <img src="resources/images/unordered_list.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;ol&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Ordered List</p>
+                        </td>
+                        <td>
+                            <p>Creates a (numbered) list of items in sequential order.</p>
+                            <img src="resources/images/ordered_list.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;li&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">List Item</p>
+                        </td>
+                        <td>
+                            <p>Creates list items.</p>
+                            <img src="resources/images/list_item.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;a&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Anchor</p>
+                        </td>
+                        <td>
+                            <p>Creates hyperlinks in an HTML document. 
+                                "href" attribute determines the location the anchor element points to. 
+                                "target" attribute specifies where a hyperlink should be opened.
+                                Can create hyperlinks to different parts of the same HTML document using the "href" attribute with "#" followed by the "id" of the element to link to.</p>
+                            <img src="resources/images/anchor.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;img&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Image</p>
+                        </td>
+                        <td>
+                            <p>Embeds images in documents. 
+                                "src" attribute is mandatory and contains the image URL.
+                                "alt" attribute creates text that will be displayed if an image fails to render due to an incorrect URL. 
+                                *self-closing tag*</p>
+                            <img src="resources/images/image.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;video&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Video</p>
+                        </td>
+                        <td>
+                            <p>Embeds a media player for video playback. 
+                                "src" attribute is mandatory and contains the video URL. 
+                                "controls" attribute displays video controls in the media player.</p>
+                            <img src="resources/images/video.png">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="tables">
+        <h2>HTML: Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag/Attribute</th>
+                        <th>Element</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;table&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Table</p>
+                        </td>
+                        <td>
+                            <p>Creates a table that represents a 2-D table made of rows and columns.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;thead&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Table Head</p>
+                        </td>
+                        <td>
+                            <p>Defines the headings of table columns encapsulated in table rows.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;th&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Table Heading</p>
+                        </td>
+                        <td>
+                            <p>Adds titles to rows and columns of a table and must be enclosed in a table row element.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;tbody&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Table Body</p>
+                        </td>
+                        <td>
+                            <p>Contains all table data other than table heading and table footer content.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;tr&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Table Row</p>
+                        </td>
+                        <td>
+                            <p>Adds rows to a table before adding table data and table headings.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;td&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Table Data</p>
+                        </td>
+                        <td>
+                            <p>Adds a cell of data to a table. Nested inside a table row element.</p>
+                            <img src="resources/images/table_data.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;colspan&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Column Span</p>
+                        </td>
+                        <td>
+                            <p>Indicates how many columns that particular cell should span within a table. Nested in table header or table data element.</p>
+                            <img src="resources/images/colspan.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;rowspan&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Row Span</p>
+                        </td>
+                        <td>
+                            <p>Indicates how many rows that particular cell should span within a table. Nested in table header or table data element.</p>
+                            <img src="resources/images/rowspan.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;tfoot&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Table Footer</p>
+                        </td>
+                        <td>
+                            <p>Uses table rows to give footer content or to summarize content at the end of a table.</p>
+                            <img src="resources/images/table_header_body_footer.png">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="forms">
+            <h2>HTML: Forms</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag/Attribute</th>
+                        <th>Element</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;form&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Form</p>
+                        </td>
+                        <td>
+                            <p>Used to collect and send information to an external source.
+                                "action" attribute determines where the information is sent.
+                                "method" attribute tells the form what to do with that information once it's sent via HTTP verb.
+                            </p>
+                            <img src="resources/images/form.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;input&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Input</p>
+                        </td>
+                        <td>
+                            <p>Renders a variety of input fields on a webpage form. 
+                                "type" attribute determines how it gets rendered (i.e., text field, checkbox, button, etc.).
+                                "name" attribute is mandatory.
+                            </p>
+                            <br>
+                            <p><em>Text Input</em></p>
+                            <p>Renders a single row input field that users can type text inside.</p>
+                            <img src="./resources/images/input_text.png">
+                            <br>
+                            <br>
+                            <p><em>Password Input</em></p>
+                            <p>Renders a single row input field which allows users to type censored text inside the field.</p>
+                            <img src="./resources/images/input_password.png">
+                            <br>
+                            <br>
+                            <p><em>Number Input</em></p>
+                            <p>Restricts users to entering only numbers and a few special characters.
+                                Can also provide a "step" attribute which creates arrows inside the input field to increase or decrease by the value of the attribute.
+                            </p>
+                            <img src="./resources/images/input_number.png">
+                            <br>
+                            <br>
+                            <p><em>Range Input</em></p>
+                            <p>Creates a slider that acts a selector </p>
+                            <img src="./resources/images/input_range.png">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;label&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Label</p>
+                        </td>
+                        <td>
+                            <p>Provides identification for a specific &lt;input&gt; 
+                                based on matching values of the &lt;input&gt;'s "id" attribute 
+                                and the &lt;label&gt;'s "for" attribute.
+                            </p>
+                            <img src="resources/images/label.png">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="semantic">
+            <h2>HTML: Semantic</h2>
+        </section>
+
+        <section id="selectors">
+            <h2>CSS: Selectors and Visual Rules</h2>
+        </section>
+
+        <section id="box-model">
+            <h2>CSS: The Box Model</h2>
+        </section>
+
+        <section id="display">
+            <h2>CSS: Display and Positioning</h2>
+        </section>
+
+        <section id="colors">
+            <h2>CSS: Colors</h2>
+        </section>
+
+        <section id="typography">
+            <h2>CSS: Typography</h2>
+        </section>
+
+        <section id="grid">
+            <h2>CSS: Grid</h2>
+        </section>
+
+    </body>
+</html>
