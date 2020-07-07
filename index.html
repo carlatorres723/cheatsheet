@@ -80,7 +80,7 @@
                             <p class="element">Title</p>
                         </td>
                         <td>
-                            <p>Defines the title of an HTML document. Displayed in browser's tab. Can only be contained inside a document's < head > element.</p>
+                            <p>Defines the title of an HTML document. Displayed in browser's tab. Can only be contained inside a document's &lt;head&gt; element.</p>
                             <img src="resources/images/title.png">
                         </td>
                     </tr>
@@ -158,13 +158,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <span class="tag">&lt;br&gt;</span>
+                            <span class="tag">&lt;br&gt;</span><br>
+                            <span><strong>*self-closing tag*</strong></span>
                         </td>
                         <td>
                             <p class="element">Line Break</p>
                         </td>
                         <td>
-                            <p>Creates a line break in text. *self-closing tag*</p>
+                            <p>Creates a line break in text.</p>
                             <img src="resources/images/break.png">
                         </td>
                     </tr>
@@ -212,40 +213,27 @@
                             <p class="element">Anchor</p>
                         </td>
                         <td>
-                            <p>Creates hyperlinks in an HTML document. 
-                                "href" attribute determines the location the anchor element points to. 
-                                "target" attribute specifies where a hyperlink should be opened.
+                            <p>Creates hyperlinks in an HTML document.<br>
+                                "href" attribute determines the location the anchor element points to.<br>
+                                "target" attribute specifies where a hyperlink should be opened.<br>
                                 Can create hyperlinks to different parts of the same HTML document using the "href" attribute with "#" followed by the "id" of the element to link to.</p>
                             <img src="resources/images/anchor.png">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <span class="tag">&lt;img&gt;</span>
+                            <span class="tag">&lt;img&gt;</span> <br>
+                            <span><strong>*self-closing tag*</strong></span>
                         </td>
                         <td>
                             <p class="element">Image</p>
                         </td>
                         <td>
-                            <p>Embeds images in documents. 
-                                "src" attribute is mandatory and contains the image URL.
-                                "alt" attribute creates text that will be displayed if an image fails to render due to an incorrect URL. 
-                                *self-closing tag*</p>
+                            <p>Embeds images in documents. <br>
+                                "src" attribute is mandatory and contains the image URL.<br>
+                                "alt" attribute creates text that will be displayed if an image fails to render due to an incorrect URL. <br>
+                            </p>
                             <img src="resources/images/image.png">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="tag">&lt;video&gt;</span>
-                        </td>
-                        <td>
-                            <p class="element">Video</p>
-                        </td>
-                        <td>
-                            <p>Embeds a media player for video playback. 
-                                "src" attribute is mandatory and contains the video URL. 
-                                "controls" attribute displays video controls in the media player.</p>
-                            <img src="resources/images/video.png">
                         </td>
                     </tr>
                 </tbody>
@@ -389,47 +377,76 @@
                             <p class="element">Form</p>
                         </td>
                         <td>
-                            <p>Used to collect and send information to an external source.
-                                "action" attribute determines where the information is sent.
-                                "method" attribute tells the form what to do with that information once it's sent via HTTP verb.
+                            <p>Used to collect and send information to an external source. <br>
+                                "action" attribute determines where the information is sent. <br>
+                                "method" attribute determines how the information is sent and processed.<br>
+                                When a &lt;form&gt; is submitted, the "name" of the fields that accept input and the "value" of those fields are sent as "name=value" pairs.
                             </p>
                             <img src="resources/images/form.png">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <span class="tag">&lt;input&gt;</span>
+                            <span class="tag">&lt;input&gt;</span><br>
+                            <span><strong>*self-closing tag*</strong></span>
                         </td>
                         <td>
                             <p class="element">Input</p>
                         </td>
                         <td>
-                            <p>Renders a variety of input fields on a webpage form. 
-                                "type" attribute determines how it gets rendered (i.e., text field, checkbox, button, etc.).
-                                "name" attribute is mandatory.
+                            <p>Renders a variety of input fields on a webpage form. <br>
+                                "type" attribute determines how it gets rendered (i.e., text field, checkbox, button, etc.). <br>
+                                "name" attribute is mandatory.<br>
+                                "required" attribute specifies that the field must include a value.<br>
+                                "min" & "max" attributes are used for Number and Range Inputs to set minimum / maximum acceptable numerical values.<br>
+                                "minlength" & "maxlength" attributes are used for Text Inputs and Textareas to set a minimum / maximum number of characters for a text field.<br>
+                                "pattern" attribute is assigned to a <span><em>regular expression</em></span>, or regex, which is a sequence of characters that make up a search pattern. Can only submit a &lt;form&gt; if the input matches the regex.
                             </p>
                             <br>
-                            <p><em>Text Input</em></p>
+                            <p><em>Text Input (type="text")</em></p>
                             <p>Renders a single row input field that users can type text inside.</p>
                             <img src="./resources/images/input_text.png">
                             <br>
                             <br>
-                            <p><em>Password Input</em></p>
+                            <p><em>Password Input (type="password")</em></p>
                             <p>Renders a single row input field which allows users to type censored text inside the field.</p>
                             <img src="./resources/images/input_password.png">
                             <br>
                             <br>
-                            <p><em>Number Input</em></p>
-                            <p>Restricts users to entering only numbers and a few special characters.
+                            <p><em>Number Input (type="number")</em></p>
+                            <p>Restricts users to entering only numbers and a few special characters. <br>
                                 Can also provide a "step" attribute which creates arrows inside the input field to increase or decrease by the value of the attribute.
                             </p>
                             <img src="./resources/images/input_number.png">
                             <br>
                             <br>
-                            <p><em>Range Input</em></p>
-                            <p>Creates a slider that acts a selector </p>
+                            <p><em>Range Input (type="range")</em></p>
+                            <p>Creates a slider that acts a selector between a "min" and "max" value. <br>
+                                The "step" attribute controls how smoothly the slider works. The smaller the step, the more fluid the movement.</p>
                             <img src="./resources/images/input_range.png">
-
+                            <br>
+                            <br>
+                            <p><em>Checkbox Input (type="checkbox")</em></p>
+                            <p>Creates a checkbox to give users multiple options and allow them to select any number of options.<br>
+                                It is important to use &lt;label&gt; to identify the checkbox.
+                                Using the same "name" for each checkbox groups the &lt;input&gt;s together. However, each &lt;input&gt; has a unique "id" to pair with a &lt;label&gt;.
+                            </p>
+                            <img src="./resources/images/input_checkbox.png">
+                            <br>
+                            <br>
+                            <p><em>Radio Button Input (type="radio")</em></p>
+                            <p>Renders a single radio button to give users only one option to choose from a group. 
+                                Multiple radio buttons of a related topic are given the same "name" attribute value. <br>
+                                It is important to use &lt;label&gt; to identify the radio button.
+                            </p>
+                            <img src="./resources/images/input_radiobutton.png">
+                            <br>
+                            <br>
+                            <p><em>Submit Input (type="submit")</em></p>
+                            <p>Creates a submit button for users to click when they are finished filling out information and want to submit their form. <br>
+                                The "value" assigned to the &lt;input&gt; shows up as text on the submit button. If no "value" is given, the button will appeaer with the default text, "Submit".
+                            </p>
+                            <img src="./resources/images/input_submit.png">
                         </td>
                     </tr>
                     <tr>
@@ -447,12 +464,204 @@
                             <img src="resources/images/label.png">
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;datalist&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Datalist</p>
+                        </td>
+                        <td>
+                            <p>Used to store a list of &lt;option&gt;s. Using an &lt;input type="text"&gt; element, a text field is created with a basic search/autocomplete functionality. <br>
+                                It is important that the &lt;input&gt; has a "list" attribute to pair it to the &lt;datalist&gt; via the "id". The values of "list" and "id" must match.<br>
+                                Ideal when providing users a list of pre-defined options, but to also allow them to write alternative inputs as well.
+                            </p>
+                            <img src="resources/images/datalist.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;textarea&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Textarea</p>
+                        </td>
+                        <td>
+                            <p>Creates a text-box for multi-line input (e.g. a comment section). <br>
+                                The element supports the "rows" and "cols" attributes which determine the height and width, respectively, of the element.<br>
+                                The "value" of the element is the content in between the opening and closing tags. This "value" renders pre-filled text in the text-box.
+                            </p>
+                            <img src="resources/images/textarea.png">
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </section>
 
         <section id="semantic">
             <h2>HTML: Semantic</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag/Attribute</th>
+                        <th>Element</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;header&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Header</p>
+                        </td>
+                        <td>
+                            <p>Container usually for either navigational links or introductory content containing &lt;h1&gt; to &lt;h6&gt; headings.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;nav&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Navigation</p>
+                        </td>
+                        <td>
+                            <p>Used to define a block of navigational links, such as menus and tables of content.<br>
+                            Important to note that &lt;nav&gt; can be used inside of a &lt;header&gt; elemente, but can also be used on its own.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;main&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Main</p>
+                        </td>
+                        <td>
+                            <p>Used to encapsulate the dominant content within a webpage.
+                            Tag is separate from the &lt;footer&gt; and &lt;nav&gt; of a web page. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;section&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Section</p>
+                        </td>
+                        <td>
+                            <p>Defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.</p> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;article&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Article</p>
+                        </td>
+                        <td>
+                            <p>Holds content that makes sense on its own. Can hold content such as articles, blogs, comments, magazines, etc.</p> 
+                            <img src="resources/images/article.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;aside&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Aside</p>
+                        </td>
+                        <td>
+                            <p>Used to mark additional information that can enhance another element but isn't required in order to understand the main content. Common uses are for bibliographies, endnotes, comments, pull quotes, editorial sidebars, additional information, etc.</p> 
+                            <img src="resources/images/aside.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;figure&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Figure</p>
+                        </td>
+                        <td>
+                            <p>Used to encapsulate media such as an image, illustration, diagram, code snippet, etc., which is referenced in the main flow of the document.</p> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;figcaption&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Figcaption</p>
+                        </td>
+                        <td>
+                            <p>Used to describe the media in the &lt;figure&gt; tag. Usually goes inside &lt;figure&gt; and is useful for grouping an image with a caption.<br>
+                            This is different than using a &lt;p&gt; element to describe the content; if we decide to change the location of &lt;figure&gt;, the &lt;figcaption&gt; will move with the figure, whereas the &lt;p&gt; tag may get displaced.</p> 
+                            <img src="resources/images/figure.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;audio&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Audio</p>
+                        </td>
+                        <td>
+                            <p>Used to embed audio content into a document.<br>
+                            "src" attribute specifies the URL of the audio file.<br>
+                            "controls" attribute automatically displays the audio controls into the browser such as play & mute.<br>
+                            "type" attribute specifies what kind of audio is being linked and helps the browser determine if it supports the file.
+                            </p> 
+                            <img src="resources/images/audio.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;video&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Video</p>
+                        </td>
+                        <td>
+                            <p>Embeds a media player for video playback. <br>
+                                "src" attribute is mandatory and contains the video URL. <br>
+                                "controls" attribute displays video controls in the media player.<br>
+                                "autoplay" attribute automatically plays the video as soon as the page is loaded.<br>
+                                "loop" attribute plays the video continously on repeat.
+                            </p>
+                            <img src="resources/images/video.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;embed&gt;</span><br>
+                            <span><strong>*self-closing tag*</strong></span>
+                        </td>
+                        <td>
+                            <p class="element">Embed</p>
+                        </td>
+                        <td>
+                            <p>Can embed any media content, including videos, audio files, and gifs from an external source.</p>
+                            <img src="resources/images/embed.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="tag">&lt;footer&gt;</span>
+                        </td>
+                        <td>
+                            <p class="element">Footer</p>
+                        </td>
+                        <td>
+                            <p>Content at the bottom of the subject information. Contains information such as contact info, copyright info, terms of use, site map, etc.</p> 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section id="selectors">

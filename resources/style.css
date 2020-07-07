@@ -27,6 +27,7 @@ a {
 table {
     border: 2px solid black;
     display: table;
+    width: 100%;
 }
 
 th {
