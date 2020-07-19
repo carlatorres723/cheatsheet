@@ -48,6 +48,12 @@ img {
     width: 25em;
 }
 
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .tag {
     background-color: cornsilk;
     text-align: center;
